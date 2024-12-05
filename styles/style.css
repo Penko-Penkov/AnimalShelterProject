@@ -129,25 +129,25 @@ body{
   font-size:4.375em;
 }
 .right-section>h3{
-  margin-top:10px;
+  margin-top:0.625em;
   font-size:1.25em;
 }
 .adopt-me{
-width:250px;
-height:50px;
-margin-top:30px;
-border-radius: 50px;
+width:12.5em;
+height:2.5em;
+margin-top:1.875em;
+border-radius: 3.125em;
 border-style: none;
 color:#985D3A;
 background-color: #D9D9D9;
-font-size:20px;
+font-size:1.25em;
 font-weight: bold;
 align-items: center;
-box-shadow: inset 1px 1px 20px #653b23 ;
+box-shadow:  0.3125em 0.3125em 0.625em rgb(57, 56, 56) ;
 cursor:pointer;
 }
 .adopt-me:hover{
-  width:350px;
+  width:21.875em;
   background-color: #985D3A;
   color:#D9D9D9;
   transition: 0.3s;
