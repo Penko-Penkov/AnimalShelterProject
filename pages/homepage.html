@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <div class="page page1">
+  <div class="page homepage">
     <header>
       <div class="header-container">
         <div class="logo-container">
@@ -26,44 +26,40 @@
               <li class="nav-item">
                 <a class="nav-links" href="#">about us</a>
                 <ul class="dropdown">
-                  <li class="submenu-item"><a href="#">How it started?</a></li>
-                  <li class="submenu-item"><a href="#">Who we are?</a></li>
-                  <li class="submenu-item"><a href="#">Our mission</a></li>
+                  <li class="dropdown-item"><a href="./aboutUsPage.html#who" target="_blank">Who are we?</a></li>
+                  <li class="dropdown-item"><a href="./aboutUsPage.html#mission" target="_blank">Our mission</a></li>
                 </ul>
               </li>
               <li id="pet" class="nav-item">
-                <a class="nav-links" href="#">pets</a>
+                <a class="nav-links" href="#"> our pets</a>
                 <ul class="dropdown">
-                  <li class="submenu-item"><a href="#">For adoption</a></li>
-                  <li class="submenu-item"><a href="#">Adopted</a></li>
+                  <li class="dropdown-item"><a href="./petsPage.html" target="_blank">For adoption</a></li>
+                  <li class="dropdown-item"><a href="./petsPage.html" target="_blank">Adopted</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-links" href="#">get involved</a>
                 <ul class="dropdown">
-                  <li class="submenu-item"><a href="#">How to donate?</a></li>
-                  <li class="submenu-item"><a href="#">How to volunteer?</a></li>
-                  <li class="submenu-item"><a href="#">How to foster?</a></li>
-                  <li class="submenu-item"><a href="#">How to adopt?</a></li>
+                  <li class="dropdown-item"><a id="adopt" href="./getInvolvedPage.html" target="_blank">How to adopt?</a></li>
+                  <li class="dropdown-item"><a id="foster" href="./getInvolvedPage.html" target="_blank">Foster</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#volunteer" target="_blank">Volunteer</a></li>
+                  <li class="dropdown-item"><a id="donate" href="./getInvolvedPage.html" target="_blank">How to donate?</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-links" href="#">our impact</a>
                 <ul class="dropdown">
-                  <li class="submenu-item"><a href="#">Achievements</a></li>
-                  <li class="submenu-item"><a href="#">Happy tails stories</a></li>
+                  <li class="dropdown-item"><a href="./ourImpactPage.html" target="_blank">Achievements</a></li>
+                  <li class="dropdown-item"><a href="./ourImpactPage.html" target="_blank">Happy tails</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a href="#">contact us</a>
               </li>
-              <!-- <li class="nav-button">
-                  <a href="#" class="donate-button">donate</a>
-              </li> -->
             </ul>
-            <button type="button" class="nav-button">donate</button>
           </div>
           </nav>
+          <button type="button" class="nav-button">donate</button>
         </div>
     </header>
     <div class="page-contents">
@@ -79,105 +75,95 @@
     </div>
   </div>
   <main>
-    <section class="page page2">
-        <div class="columns">
-          <div class="left-column">
-            <img class="golden" src="../images/jordy-munoz--fOab2dD4Ks-unsplash.jpg" alt="golden-retriever">
-            </div>
-            <div class="right-column">
-              <div class="contents">
-                <h1 class="main-heading">Our mission</h1>
-                <p class="main-text"> We are an animal rescue shelter that takes care of abandoned and neglected animals. We strive to provide every animal with the love, care, and forever home they deserve.</p>
-                <button class="main-button" type="button">Learn more</button>
-              </div>
-          </div>
-        </div>
-    </section>
     <section class="page page3">
       <h2 class="main-heading">Pets up for adoption</h2>
-      <p class="main-text">Find Your New Best Friend. <br>
-        Browse through our list of adorable animals waiting for a loving home.</p>
+      <p class="main-text">Find Your New Best Friend! <br>
+        Here are some of the adorable animals waiting for a loving home.</p>
       <div class="cards-container">
         <div class="cards">
-          <div class="img-container">
-            <img class="pets" src="../images/roro.JPG" alt="dog1">
-        </div>
+          <div class="the-front">
+            <div class="img-container">
+              <img class="pets" src="../images/roro.JPG" alt="dog1">
+          </div>
+            <h2 class="card-text">Roro</h2>
+          </div>
+          <div class="the-back">
+            <p class="card-text-back">This is Roro.
+              He is a 7 years old mix breed. He has all the needed vaccinations and a passport.
+              His weight is around 10kg.
+              Roro is a gentle and sweet soul that loves hugs and is always happy to see you.
+              If you wish to donate or adopt Roro visit the <span>How to adopt </span> button!
+            </p>
+          </div>
         </div>
         <div class="cards">
-          <div class="img-container">
-            <img class="pets" src="../images/delta1.jpeg" alt="dog2">
-        </div>
+          <div class="the-front">
+            <div class="img-container">
+              <img class="pets" src="../images/delta1.jpeg" alt="dog2">
+          </div>
+        <h2 class="card-text">Delta</h2>
+          </div>
+          <div class="the-back">
+            <p class="card-text-back">This girl is 4 years old Delta. She is a mix breed weighing 20kg. She has been vaccinated, has a passport and a chip. Delta is still a crazy baby dinosaur running around trying to get your attention. She is very sweet and really smart so she can't be fooled with silly tricks. If you wish to donate or adopt Delta visit the <span>How to adopt </span> button!
+            </p>
+          </div>
         </div>
         <div class="cards">
-          <div class="img-container">
-            <img class="pets" src="../images/ket.JPG" alt="cat">
+          <div class="the-front">
+            <div class="img-container">
+              <img class="pets" src="../images/ket.JPG" alt="cat">
+            </div>
+            <h2 class="card-text">Delta</h2>
+          </div>
+          <div class="the-back">
+            <p class="card-text-back">This is 16 years old Kety. She is a Thai cat. She has been vaccinated and has a passport. Kety is an old lady and a grumpy one. She can be a tough nut to crack and is very moody but if you feed her and give her attention ONLY when she wants she's a sweetheart. If you wish to donate or adopt Kety visit the <span>How to adopt </span> button!
+            </p>
           </div>
         </div>
       </div>
        <button type="button" class="main-button">How to adopt</button>
     </section>
-    <section>
-      <h2>How to get involved</h2>
-      <p></p>
-      <div class="grid">
-        <div class="donate">
-          <button type="button" class="donate">Donate</button>
-        </div>
-        <div class="volunteer">
-          <button type="button" class="volunteer">Volunteer</button>
-        </div>
-        <div class="foster">
-          <button type="button" class="foster">Foster</button>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h2>Our impact</h2>
-      <p></p>
-      <!-- Map -->
-    </section>
-    <section>
-      <div class="container">
-        <div class="text"></div>
-        <button type="button">Read more</button>
-      </div>
-      <div></div>
-    </section>
   </main>
   <footer>
     <div class="footer">
       <div class="left-part">
-        <h2>Useful links</h2>
-        <div>
-          <div>
-            <a href="#">Contact us</a>
-            <a href="#">Contact us</a>
-            <a href="#">Contact us</a>
-            <a href="#">Contact us</a>
-            <a href="#">Contact us</a>
+        <h2 class="footer-heading">Useful links</h2>
+        <div class="ul-container">
+          <div class="ul-left">
+            <ul>
+              <li>
+                <a href="#">Our pets</a>
+              </li>
+              <li>
+                <a href="#">Adopt</a>
+              </li>
+              <li>
+                <a href="#">Donate</a>
+              </li>
+              </ul>
           </div>
-          <div>
-            <a href="#">Contact us</a>
-            <a href="#">Contact us</a>
-            <a href="#">Contact us</a>
-            <a href="#">Contact us</a>
-            <a href="#">Contact us</a>
+          <div class="ul-right">
+            <ul>
+              <li>
+                <a href="#">Foster</a>
+              </li>
+              <li>
+                <a href="#">Volunteer</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+            </ul>
           </div>
         </div>
-       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-       </ul>
+        <!-- icons -->
       </div>
       <div class="right-part">
-        <h2>Where to find us?</h2>
+        <h2 class="footer-heading">Where to find us?</h2>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>1000, Sofia, Bulgaria</li>
+          <li>delta_shelter@gmail.com</li>
+          <li>+359888254169</li>
         </ul>
       </div>
     </div>
