@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/headerAllPagesStyle.css">
+  <link rel="stylesheet" href="../styles/allPagesStyle.css">
+  <link rel="stylesheet" href="../styles/donateFormStyle.css">
+  <link rel="stylesheet" href="../styles/mediaQueries.css">
+</head>
+<body>
+  <div class="page page6">
+    <header>
+      <div class="header-container">
+        <div class="logo-container">
+          <a href="./homepage.html"><img class="logo" src="../images/delta-3.png" alt="logo"></a>
+        </div>
+        <nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a id="home" href="./homepage.html">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="./aboutUsPage.html">about us</a>
+              </li>
+              <li id="pet" class="nav-item">
+                <a class="nav-links" href="./petsPage.html"> our pets</a>
+                <ul class="dropdown">
+                  <li class="dropdown-item"><a href="./petsPage.html">For adoption</a></li>
+                  <li class="dropdown-item"><a href="./petsPage.html">Adopted</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="./getInvolvedPage.html">get involved</a>
+                <ul class="dropdown">
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#adopt" target="_blank">How to adopt?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#foster" target="_blank">How to foster?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#volunteer" target="_blank">How to volunteer?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#donate" target="_blank">How to donate?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="./ourImpactPage.html">our impact</a>
+              </li>
+              <li class="nav-item">
+                <a href="./petsPage.html#contact">contact us</a>
+              </li>
+            </ul>
+          </div>
+          </nav>
+          <button type="button" class="nav-button">donate</button>
+        </div>
+    </header>
+    <main>
+      <section>
+        <div class="form-container">
+          <form action="submitForm.html" method="POST">
+            <fieldset>
+              <legend class="main-heading">Donator Information:</legend>
+              <input type="text" id="fname" name="fname" placeholder="First name"><br><br>
+              <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
+              <input type="email" id="email" name="email" placeholder="Email"><br><br>
+              <button class="nav-button" type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="left-part">
+          <h2 class="footer-heading">Useful links</h2>
+          <div class="ul-container">
+            <div class="ul-left">
+              <ul>
+                <li>
+                  <a href="#">Our pets</a>
+                </li>
+                <li>
+                  <a href="#">Adopt</a>
+                </li>
+                <li>
+                  <a href="#">Donate</a>
+                </li>
+                </ul>
+            </div>
+            <div class="ul-right">
+              <ul>
+                <li>
+                  <a href="#">Foster</a>
+                </li>
+                <li>
+                  <a href="#">Volunteer</a>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div >
+            <ul class="icons">
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+            </ul>
+          </div>
+          <!-- icons -->
+        </div>
+        <div class="right-part">
+          <h2 id="contact" class="footer-heading">Where to find us?</h2>
+          <ul>
+            <li><span class="material-symbols-outlined">pin_drop</span>1000, Sofia, Bulgaria</li>
+            <li><span class="material-symbols-outlined">mail</span>delta_shelter@gmail.com</li>
+            <li><a href="#"><span class="material-symbols-outlined">call</span>+359888254169</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../burger-menu-toggle.js"></script>
+</body>
+</html>

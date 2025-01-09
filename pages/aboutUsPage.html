@@ -3,26 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Impact page</title>
+  <title>About us page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
-  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/headerAllPagesStyle.css">
+  <link rel="stylesheet" href="../styles/allPagesStyle.css">
+  <link rel="stylesheet" href="../styles/aboutPageStyle.css">
+  <link rel="stylesheet" href="../styles/mediaQueries.css">
 </head>
 <body>
+  <div class="page page2">
+    <header>
+      <div class="header-container">
+        <div class="logo-container">
+          <a href="./homepage.html"><img class="logo" src="../images/delta-3.png" alt="logo"></a>
+        </div>
+        <nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a id="home" href="./homepage.html">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="#">about us</a>
+              </li>
+              <li id="pet" class="nav-item">
+                <a class="nav-links" href="./petsPage.html"> our pets</a>
+                <ul class="dropdown">
+                  <li class="dropdown-item"><a href="./petsPage.html#adoption">For adoption</a></li>
+                  <li class="dropdown-item"><a href="./petsPage.html#adopted">Adopted</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="./getInvolvedPage.html">get involved</a>
+                <ul class="dropdown">
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#adopt" target="_blank">How to adopt?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#foster" target="_blank">How to foster?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#volunteer" target="_blank"> How to volunteer?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#donate" target="_blank">How to donate?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="./ourImpactPage.html">our impact</a>
+              </li>
+              <li class="nav-item">
+                <a href="./aboutUsPage.html#contact">contact us</a>
+              </li>
+            </ul>
+          </div>
+          </nav>
+          <button type="button" class="nav-button" id="donate-button">donate</button>
+        </div>
+    </header>
   <main>
-    <section class="page page2">
+    <section class="page about-us-page">
       <div class="columns">
         <div class="left-column">
-          <img class="golden" src="../images/jordy-munoz--fOab2dD4Ks-unsplash.jpg" alt="golden-retriever">
+          <h1 class="main-heading">Who are we?</h1>
+              <p class="main-text">We are an animal rescue shelter that takes care of abandoned and neglected animals. Our team consists of dedicated  animal lovers and professionals committed to providing a safe haven for homeless and abandoned animals. Our shelter is designed to offer a nurturing environment where animals can receive the care and love they need while waiting for their forever homes.
+              </p>
+              <p class="main-text">We believe in creating a compassionate community where every animal is treated with dignity and respect. </p>
           </div>
           <div class="right-column">
-            <div class="contents">
-              <h1 class="main-heading">Who are we?</h1>
-              <p class="main-text"> We are an animal rescue shelter that takes care of abandoned and neglected animals. We strive to provide every animal with the love, care, and forever home they deserve.</p>
-              <button class="main-button" type="button">Learn more</button>
-            </div>
+              <img class="paw" src="../images/paw-548634_1280.jpg" alt="paw">
         </div>
       </div>
         <div class="columns">
@@ -32,13 +83,72 @@
             <div class="right-column">
               <div class="contents">
                 <h1 class="main-heading" id="mission">Our mission</h1>
-                <p class="main-text"> We are an animal rescue shelter that takes care of abandoned and neglected animals. We strive to provide every animal with the love, care, and forever home they deserve.</p>
-                <button class="main-button" type="button">Learn more</button>
+                <p class="main-text"> Our mission is to rescue, rehabilitate, and rehome animals in need. We strive to:</p>
+                <ul>
+                  <li class="bullets">Rescue animals from neglect, abuse, and abandonment.</li>
+                  <li class="bullets">Rehabilitate them by providing medical care, socialization, and behavioral training.</li>
+                  <li class="bullets">Rehome them by finding loving, permanent homes through our adoption program.</li>
+                </ul>
+                <p class="main-text">Our shelter also aims to educate the public on responsible pet ownership and the importance of spaying and neutering to reduce pet overpopulation. Our mission is to provide every animal with the love, care, and forever home they deserve.</p>
               </div>
           </div>
         </div>
     </section>
     </main>
-    <script src="../app.js"></script>
+    <footer>
+      <div class="footer">
+        <div class="left-part">
+          <h2 class="footer-heading">Useful links</h2>
+          <div class="ul-container">
+            <div class="ul-left">
+              <ul>
+                <li>
+                  <a href="./petsPage.html">Our pets</a>
+                </li>
+                <li>
+                  <a href="./getInvolvedPage.html#adopt">Adopt</a>
+                </li>
+                <li>
+                  <a href="./getInvolvedPage.html#donate">Donate</a>
+                </li>
+                </ul>
+            </div>
+            <div class="ul-right">
+              <ul>
+                <li>
+                  <a href="./getInvolvedPage.html#foster">Foster</a>
+                </li>
+                <li>
+                  <a href="./getInvolvedPage.html#volunteer">Volunteer</a>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div >
+            <ul class="icons">
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+            </ul>
+          </div>
+          <!-- icons -->
+        </div>
+        <div class="right-part">
+          <h2 id="contact" class="footer-heading">Where to find us?</h2>
+          <ul>
+            <li><span class="material-symbols-outlined">pin_drop</span>1000, Sofia, Bulgaria</li>
+            <li><span class="material-symbols-outlined">mail</span>delta_shelter@gmail.com</li>
+            <li><a href="#"><span class="material-symbols-outlined">call</span>+359888254169</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <script src="../buttons.js"></script>
+    <script src="../burger-menu-toggle.js"></script>
 </body>
 </html>

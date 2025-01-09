@@ -8,7 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
   <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/allPagesStyle.css">
+  <link rel="stylesheet" href="../styles/homepageStyles.css">
+  <link rel="stylesheet" href="../styles/mediaQueries.css">
 </head>
 <body>
   <div class="page homepage">
@@ -18,48 +22,45 @@
           <a href="#"><img class="logo" src="../images/delta-5.png" alt="logo"></a>
         </div>
         <nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
           <div class="nav-menu-container">
             <ul class="nav-menu">
               <li class="nav-item">
                 <a id="home" href="#">home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-links" href="#">about us</a>
-                <ul class="dropdown">
-                  <li class="dropdown-item"><a href="./aboutUsPage.html#who" target="_blank">Who are we?</a></li>
-                  <li class="dropdown-item"><a href="./aboutUsPage.html#mission" target="_blank">Our mission</a></li>
-                </ul>
+                <a class="nav-links" href="./aboutUsPage.html">about us</a>
               </li>
               <li id="pet" class="nav-item">
-                <a class="nav-links" href="#"> our pets</a>
+                <a class="nav-links" href="./petsPage.html"> our pets</a>
                 <ul class="dropdown">
-                  <li class="dropdown-item"><a href="./petsPage.html" target="_blank">For adoption</a></li>
-                  <li class="dropdown-item"><a href="./petsPage.html" target="_blank">Adopted</a></li>
+                  <li class="dropdown-item"><a href="./petsPage.html#adoption">For adoption</a></li>
+                  <li class="dropdown-item"><a href="./petsPage.html#adopted">Adopted</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-links" href="#">get involved</a>
+                <a class="nav-links" href="./getInvolvedPage.html">get involved</a>
                 <ul class="dropdown">
-                  <li class="dropdown-item"><a id="adopt" href="./getInvolvedPage.html" target="_blank">How to adopt?</a></li>
-                  <li class="dropdown-item"><a id="foster" href="./getInvolvedPage.html" target="_blank">Foster</a></li>
-                  <li class="dropdown-item"><a href="./getInvolvedPage.html#volunteer" target="_blank">Volunteer</a></li>
-                  <li class="dropdown-item"><a id="donate" href="./getInvolvedPage.html" target="_blank">How to donate?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#adopt" target="_blank">How to adopt?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#foster" target="_blank">How to foster?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#volunteer" target="_blank">How to volunteer?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#donate" target="_blank">How to donate?</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-links" href="#">our impact</a>
-                <ul class="dropdown">
-                  <li class="dropdown-item"><a href="./ourImpactPage.html" target="_blank">Achievements</a></li>
-                  <li class="dropdown-item"><a href="./ourImpactPage.html" target="_blank">Happy tails</a></li>
-                </ul>
+                <a class="nav-links" href="./ourImpactPage.html">our impact</a>
               </li>
               <li class="nav-item">
-                <a href="#">contact us</a>
+                <a href="./homepage.html#contact">contact us</a>
               </li>
             </ul>
           </div>
           </nav>
-          <button type="button" class="nav-button">donate</button>
+          <button type="button" class="nav-button" id="donate-button">donate</button>
         </div>
     </header>
     <div class="page-contents">
@@ -68,14 +69,14 @@
       <div class="right-section">
         <h1 class="text-heading">Adopt a best friend today!</h1>
         <h3 class="text-heading">Saving Lives, One Paw at a Time</h3>
-        <button type="button" class="adopt-me">Adopt me!
+        <button type="button" class="adopt-me" id="adopt-me-button">Adopt me!
           <i class="em em-dog2" aria-role="presentation"></i>
         </button>
       </div>
     </div>
   </div>
   <main>
-    <section class="page page3">
+    <section class="page pets-section">
       <h2 class="main-heading">Pets up for adoption</h2>
       <p class="main-text">Find Your New Best Friend! <br>
         Here are some of the adorable animals waiting for a loving home.</p>
@@ -99,7 +100,7 @@
         <div class="cards">
           <div class="the-front">
             <div class="img-container">
-              <img class="pets" src="../images/delta1.jpeg" alt="dog2">
+              <img class="pets" src="../images/delta1.jpg" alt="dog2">
           </div>
         <h2 class="card-text">Delta</h2>
           </div>
@@ -113,7 +114,7 @@
             <div class="img-container">
               <img class="pets" src="../images/ket.JPG" alt="cat">
             </div>
-            <h2 class="card-text">Delta</h2>
+            <h2 class="card-text">Kety</h2>
           </div>
           <div class="the-back">
             <p class="card-text-back">This is 16 years old Kety. She is a Thai cat. She has been vaccinated and has a passport. Kety is an old lady and a grumpy one. She can be a tough nut to crack and is very moody but if you feed her and give her attention ONLY when she wants she's a sweetheart. If you wish to donate or adopt Kety visit the <span>How to adopt </span> button!
@@ -121,7 +122,7 @@
           </div>
         </div>
       </div>
-       <button type="button" class="main-button">How to adopt</button>
+       <button type="button" class="main-button" id="how-to-adopt-button">How to adopt</button>
     </section>
   </main>
   <footer>
@@ -132,41 +133,51 @@
           <div class="ul-left">
             <ul>
               <li>
-                <a href="#">Our pets</a>
+                <a href="./petsPage.html">Our pets</a>
               </li>
               <li>
-                <a href="#">Adopt</a>
+                <a href="./getInvolvedPage.html#adopt">Adopt</a>
               </li>
               <li>
-                <a href="#">Donate</a>
+                <a href="./getInvolvedPage.html#donate">Donate</a>
               </li>
               </ul>
           </div>
           <div class="ul-right">
             <ul>
               <li>
-                <a href="#">Foster</a>
+                <a href="./getInvolvedPage.html#foster">Foster</a>
               </li>
               <li>
-                <a href="#">Volunteer</a>
+                <a href="./getInvolvedPage.html#volunteer">Volunteer</a>
               </li>
               <li>
-                <a href="#">About us</a>
+                <a href="./aboutUsPage.html">About us</a>
               </li>
             </ul>
           </div>
         </div>
+        <div >
+          <ul class="icons">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+          </ul>
+        </div>
         <!-- icons -->
       </div>
       <div class="right-part">
-        <h2 class="footer-heading">Where to find us?</h2>
+        <h2 id="contact" class="footer-heading">Where to find us?</h2>
         <ul>
-          <li>1000, Sofia, Bulgaria</li>
-          <li>delta_shelter@gmail.com</li>
-          <li>+359888254169</li>
+          <li><span class="material-symbols-outlined">pin_drop</span>1000, Sofia, Bulgaria</li>
+          <li><span class="material-symbols-outlined">mail</span>delta_shelter@gmail.com</li>
+          <li><a href="#"><span class="material-symbols-outlined">call</span>+359888254169</a></li>
         </ul>
       </div>
     </div>
   </footer>
+  <script src="../buttons.js"></script>
+  <script src="../burger-menu-toggle.js"></script>
 </body>
 </html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foster Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/headerAllPagesStyle.css">
+  <link rel="stylesheet" href="../styles/allPagesStyle.css">
+  <link rel="stylesheet" href="../styles/fosterFormStyle.css">
+  <link rel="stylesheet" href="../styles/mediaQueries.css">
+</head>
+<body>
+  <div class="page page8">
+    <header>
+      <div class="header-container">
+        <div class="logo-container">
+          <a href="./homepage.html"><img class="logo" src="../images/delta-3.png" alt="logo"></a>
+        </div>
+        <nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a id="home" href="./homepage.html">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="./aboutUsPage.html">about us</a>
+              </li>
+              <li id="pet" class="nav-item">
+                <a class="nav-links" href="./petsPage.html"> our pets</a>
+                <ul class="dropdown">
+                  <li class="dropdown-item"><a href="./petsPage.html">For adoption</a></li>
+                  <li class="dropdown-item"><a href="./petsPage.html">Adopted</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="./getInvolvedPage.html">get involved</a>
+                <ul class="dropdown">
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#adopt" target="_blank">How to adopt?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#foster" target="_blank">How to foster?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#volunteer" target="_blank">How to volunteer?</a></li>
+                  <li class="dropdown-item"><a href="./getInvolvedPage.html#donate" target="_blank">How to donate?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="./ourImpactPage.html">our impact</a>
+              </li>
+              <li class="nav-item">
+                <a href="./petsPage.html#contact">contact us</a>
+              </li>
+            </ul>
+          </div>
+          </nav>
+          <button type="button" class="nav-button" id="donate-button">donate</button>
+        </div>
+    </header>
+    <main>
+      <section>
+        <div class="form-container">
+          <form action="submitForm.html" method="POST">
+            <fieldset>
+              <legend class="main-heading">Questionnaire for Prospective Foster Parents</legend>
+              <label for="fullname">Full name</label><br>
+              <input type="text" id="fullname" name="fullname"><br>
+              <label for="email">Email address</label><br>
+              <input type="email" id="email" name="email"><br>
+              <label for="phoneNum">Phone number*</label><br>
+              <input type="text" id="phoneNum" name="phoneNum" required><br>
+              <label for="animal-name">Name of animal you'd like to adopt:</label><br>
+              <input type="text" id="animal-name" name="animal-name"><br>
+              <label for="animal-living">Where is the adopted animal going to live?*</label><br>
+              <select id="animal-living" name="animal-living" required>
+                <option value="0">-Choose an option-</option>
+                <option value="1">House</option>
+                <option value="2">Apartment</option>
+                <option value="3">Rented house</option>
+                <option value="4">Rented apartment</option>
+                <option value="6">Other</option>
+              </select><br>
+              <label>Do you have other animals?</label><br>
+              <input type="radio" id="yes" name="other-animals" value="Yes">
+              <label for="yes">Yes</label><br>
+              <input type="radio" id="no" name="other-animals" value="No">
+              <label for="no">No</label><br>
+              <label>Any experience in taking care of animals?</label><br>
+              <input type="radio" id="experience-yes" name="experience" value="Yes">
+              <label for="experience-yes">Yes</label><br>
+              <input type="radio" id="experience-no" name="experience" value="No">
+              <label for="experience-no">No</label><br>
+              <label>Are you okay with:*</label><br>
+              <input type="checkbox" id="visit" name="visit" value="visit">
+              <label for="visit">us visiting your home?</label><br>
+              <input type="checkbox" id="care" name="care" value="care">
+              <label for="care">giving the best care to the animal?</label><br>
+              <input type="checkbox" id="assist" name="assist" value="assist">
+              <label for="assist">assisting us with visits, meetings, events related to the adoption of the animal you wish to foster?</label><br>
+              <button class="nav-button" type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="left-part">
+          <h2 class="footer-heading">Useful links</h2>
+          <div class="ul-container">
+            <div class="ul-left">
+              <ul>
+                <li>
+                  <a href="#">Our pets</a>
+                </li>
+                <li>
+                  <a href="#">Adopt</a>
+                </li>
+                <li>
+                  <a href="#">Donate</a>
+                </li>
+                </ul>
+            </div>
+            <div class="ul-right">
+              <ul>
+                <li>
+                  <a href="#">Foster</a>
+                </li>
+                <li>
+                  <a href="#">Volunteer</a>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div >
+            <ul class="icons">
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+            </ul>
+          </div>
+          <!-- icons -->
+        </div>
+        <div class="right-part">
+          <h2 id="contact" class="footer-heading">Where to find us?</h2>
+          <ul>
+            <li><span class="material-symbols-outlined">pin_drop</span>1000, Sofia, Bulgaria</li>
+            <li><span class="material-symbols-outlined">mail</span>delta_shelter@gmail.com</li>
+            <li><a href="#"><span class="material-symbols-outlined">call</span>+359888254169</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../buttons-2.js"></script>
+  <script src="../burger-menu-toggle.js"></script>
+</body>
+</html>

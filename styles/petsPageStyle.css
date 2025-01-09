@@ -1,0 +1,96 @@
+.pets-page{
+  margin-top:100px;
+}
+.main-heading{
+  color:#D9D9D9;
+  font-size: 30px;
+  padding-bottom:30px;
+  padding-left: 30px;
+  text-align: start;
+  position: relative;
+}
+.main-text{
+  color:#D9D9D9;
+  font-size: 20px;
+  padding-bottom:30px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.card-wrapper{
+  max-width:80%;
+  margin: auto;
+  overflow:hidden;
+}
+.card-list {
+  margin-bottom: 60px;
+}
+.card-list .card-item{
+  list-style: none;
+}
+.card-list .card-item .card-link{
+  width: 380px;
+  display: block;
+  background-color: #D9D9D9;
+  padding: 30px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+.second-slider{
+  height: 460px;
+}
+.card-list .card-link .card-image{
+  width:100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-list .card-link p{
+  color:#653b23;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.card-list .card-link h3{
+  font-size: 15px;
+  color:#653b23;
+  margin-top: 10px;
+}
+.card-wrapper .swiper-pagination-bullet{
+  background-color:#653b23;
+  height: 12px;
+  width:12px;
+  opacity:0.5;
+}
+.card-wrapper .swiper-pagination-bullet-active{
+  opacity: 1;
+}
+.card-wrapper .swiper-button-next,.card-wrapper .swiper-button-prev{
+  color: #653b23;
+  font-weight:900;
+}
+.card-wrapper .swiper-pagination{
+  margin-top: 60px;
+}
+.pets-page .main-heading, .pets-page{
+  text-align: center;
+}
+#adopt-me-button {
+  display: inline-block;
+  width:12.5em;
+  height:2.5em;
+  margin-top:1.875em;
+  border-radius: 3.125em;
+  border-style: none;
+  color:#985D3A;
+  background-color: #D9D9D9;
+  font-size:1.25em;
+  font-weight: bold;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(59, 33, 23, 0.3), 0 6px 20px 0 rgba(59, 33, 23, 0.19);
+  cursor:pointer;
+}
+#adopt-me-button:hover{
+  height:80px;
+  background-color: #653b23;
+  color:#D9D9D9;
+  transition: 0.5s ease-in-out;
+} 
