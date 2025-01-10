@@ -1,13 +1,13 @@
 
 .about-us-page{
-  margin-bottom:100px;
+  margin-bottom:6.25em;
 }
 .columns{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top:100px;
-  margin-bottom: 150px;
+  margin-top:6.25em;
+  margin-bottom: 9.375em;
   width:100%;
 }
 .left-column{
@@ -17,15 +17,15 @@
 }
 .paw, .golden{
   width:80%;
-  border-radius: 3px;
+  border-radius: 0.1875em;
   object-fit: contain;
-  box-shadow: 25px 25px rgba(59, 33, 23, 0.6);
+  box-shadow: 1.5625em 1.5625em rgba(59, 33, 23, 0.6);
 }
 .paw:hover{
   width:90%;
-  border-radius: 3px;
+  border-radius: 0.1875em;
   object-fit: contain;
-  box-shadow: 25px 25px rgba(59, 33, 23, 0.6);
+  box-shadow: 1.5625em 1.5625em rgba(59, 33, 23, 0.6);
   transition: 0.5s ease-in;
 }
 .right-column{
@@ -36,23 +36,23 @@
 }
 .golden:hover{
   width:90%;
-  border-radius: 3px;
+  border-radius: 0.1875em;
   object-fit: contain;
-  box-shadow: 25px -25px rgba(59, 33, 23, 0.6);
+  box-shadow:  1.5625em 1.5625em rgba(59, 33, 23, 0.6);
   transition: 0.5s ease-in;
 }
 .bullets{
   color:#D9D9D9;
-  font-size: 20px;
-  padding-bottom:30px;
-  padding-left: 30px;
+  font-size: 1.25em;
+  padding-bottom:1.875em;
+  padding-left: 1.875em;
   font-style: italic;
 }
 .contents ul{
   list-style: none;
 }
 .contents ul li::before {
-  margin-right: 5px;
+  margin-right: 0.3125em;
   content: '»';
   color: rgb(240, 204, 114);
 }

@@ -1,5 +1,5 @@
 section{
-  margin-top: 120px;
+  margin-top: 7.5em;
   width: 100%;
 }
 .steps-container{
@@ -23,38 +23,38 @@ width: 50%;
 .right-side img{
   width: 50%;
   opacity: 0.9;
-  border-radius: 12px;
+  border-radius: 0.75em;
 }
 .right-side img:hover{
   width: 50%;
   transition: 0.7s ease-in-out;
 }
 .how-to ul{
-  margin-left: 60px;
+  margin-left: 3.75em;
   color:#D9D9D9;
   line-height: 2;
   list-style: none;
 }
 .how-to ul li{
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .how-to ul li::before {
-  margin-right: 5px;
+  margin-right: 0.3125em;
   content: '➲';
   color: rgb(240, 204, 114);
-  font-size: 25px;
+  font-size: 1.5625em;
 }
 .bullets{
   color:#D9D9D9;
-  font-size: 20px;
-  padding-bottom:30px;
-  padding-left: 30px;
+  font-size: 1.25em;
+  padding-bottom:1.875em;
+  padding-left: 1.875em;
   font-style: italic;
 }
 .form-button{
-  width:200px;
+  width:12.5em;
   height:2.5em;
-  margin-top: 30px;;
+  margin-top: 1.875em;
   background-color: #D9D9D9;
   border-radius: 1.875em;
   border-style:none;
@@ -64,15 +64,15 @@ width: 50%;
  
 }
 .form-button:hover{
-  width:300px;
+  width:18.75em;
   background-color: #834E2E;
   color:#D9D9D9;
   transition: 0.7s ease-in-out;
-  box-shadow: 0 4px 8px 0 rgba(59, 33, 23, 0.3), 0 6px 20px 0 rgba(59, 33, 23, 0.19);
+  box-shadow: 0 0.25em 0.5em 0 rgba(59, 33, 23, 0.3), 0 0.375em 1.25em 0 rgba(59, 33, 23, 0.19);
 }
 span{
   font-weight: 700;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.25em;
   color: #653b23;
 }

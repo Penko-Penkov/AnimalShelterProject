@@ -1,20 +1,20 @@
 .pets-page{
-  margin-top:100px;
+  margin-top:6.25em;
 }
 .main-heading{
   color:#D9D9D9;
-  font-size: 30px;
-  padding-bottom:30px;
-  padding-left: 30px;
+  font-size: 1.875em;
+  padding-bottom:1.875em;
+  padding-left: 1.875em;
   text-align: start;
   position: relative;
 }
 .main-text{
   color:#D9D9D9;
-  font-size: 20px;
-  padding-bottom:30px;
-  padding-left: 30px;
-  margin-bottom: 30px;
+  font-size: 1.25em;
+  padding-bottom:1.875em;
+  padding-left: 1.875em;
+  margin-bottom: 1.875em;
   line-height: 1.6;
 }
 .card-wrapper{
@@ -23,41 +23,41 @@
   overflow:hidden;
 }
 .card-list {
-  margin-bottom: 60px;
+  margin-bottom: 3.75em;
 }
 .card-list .card-item{
   list-style: none;
 }
 .card-list .card-item .card-link{
-  width: 380px;
+  width: 23.75em;
   display: block;
   background-color: #D9D9D9;
-  padding: 30px;
-  border-radius: 12px;
+  padding: 1.875em;
+  border-radius: 0.75em;
   text-decoration: none;
 }
 .second-slider{
-  height: 460px;
+  height: 28.75em;
 }
 .card-list .card-link .card-image{
   width:100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 0.625em;
 }
 .card-list .card-link p{
   color:#653b23;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 0.625emx;
 }
 .card-list .card-link h3{
-  font-size: 15px;
+  font-size: 0.9375em;
   color:#653b23;
-  margin-top: 10px;
+  margin-top: 0.625em;
 }
 .card-wrapper .swiper-pagination-bullet{
   background-color:#653b23;
-  height: 12px;
-  width:12px;
+  height: 0.75em;
+  width:0.75em;
   opacity:0.5;
 }
 .card-wrapper .swiper-pagination-bullet-active{
@@ -68,7 +68,7 @@
   font-weight:900;
 }
 .card-wrapper .swiper-pagination{
-  margin-top: 60px;
+  margin-top: 3.75em;
 }
 .pets-page .main-heading, .pets-page{
   text-align: center;
@@ -85,11 +85,11 @@
   font-size:1.25em;
   font-weight: bold;
   align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(59, 33, 23, 0.3), 0 6px 20px 0 rgba(59, 33, 23, 0.19);
+  box-shadow: 0 0.25em 0.5em 0 rgba(59, 33, 23, 0.3), 0 0.375em 1.25em 0 rgba(59, 33, 23, 0.19);
   cursor:pointer;
 }
 #adopt-me-button:hover{
-  height:80px;
+  height:5em;
   background-color: #653b23;
   color:#D9D9D9;
   transition: 0.5s ease-in-out;

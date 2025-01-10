@@ -12,7 +12,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items:center;
-  height:140px;
+  height:8.75em;
   width:90%;
   margin:auto;
 }
@@ -28,7 +28,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items:center;
-  width:1000px;
+  width:62.5em;
 }
 .nav-menu{
   display:flex;
@@ -47,9 +47,9 @@
   cursor:pointer;
 }
 .nav-item{
-  height:50px;
-  width:160px;
-  padding-top:10px;
+  height:3.125em;
+  width:10em;
+  padding-top:0.625em;
 }
 .nav-item:hover {
   background-color: #985D3A;
@@ -60,22 +60,22 @@
   display:none;
   background-color: #834E2E;
   list-style: none;
-  margin-top:10px;
+  margin-top:0.625em;
 }
 .nav-item:hover .dropdown{
   display:block;
 }
 .dropdown-item{ 
-  line-height: 45px;
-  border-bottom: 2px solid #D9D9D9;
-  margin-left:10px;
-  margin-right:10px;
+  line-height: 2.8125em;
+  border-bottom: 0.125em solid #D9D9D9;
+  margin-left:0.625em;
+  margin-right:0.625em;
 }
 .dropdown-item:last-child{ 
   border-bottom: none;
 }
 .dropdown-item>a{
-  font-size:15px;
+  font-size:0.9375em;
   text-decoration: none;
   color:#D9D9D9;
 }
@@ -142,7 +142,7 @@ background-color: #D9D9D9;
 font-size:1.25em;
 font-weight: bold;
 align-items: center;
-box-shadow: 0 4px 8px 0 rgba(59, 33, 23, 0.3), 0 6px 20px 0 rgba(59, 33, 23, 0.19);
+box-shadow: 0 0.25em 0.5em 0 rgba(59, 33, 23, 0.3), 0 0.375em 1.25em 0 rgba(59, 33, 23, 0.19);
 cursor:pointer;
 }
 .adopt-me:hover{
@@ -153,18 +153,18 @@ cursor:pointer;
 }
 .main-heading{
   color:#D9D9D9;
-  font-size: 40px;
-  padding-bottom:30px;
-  padding-left: 30px;
+  font-size: 2.5em;
+  padding-bottom:1.875em;
+  padding-left: 1.875em;
 }
 .main-text{
   color:#D9D9D9;
-  font-size: 25px;
-  padding-bottom:30px;
-  padding-left: 30px;
+  font-size: 1.5625em;
+  padding-bottom:1.875em;
+  padding-left: 1.875em;
 }
 .main-button:hover{
-  height:80px;
+  height:5em;
   background-color: #653b23;
   color:#D9D9D9;
   transition: 0.5s ease-in-out;
@@ -172,37 +172,37 @@ cursor:pointer;
 .pets-section{
   display:flex;
   flex-direction: column;
-  margin-top:100px;
+  margin-top:6.25em;
 }
 .cards-container{
   display:flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-left:150px;
-  margin-right:150px;
+  margin-left:9.375em;
+  margin-right:9.375em;
 }
 .cards{
   transform-style:preserve-3d;
   transition: all 0.7s ease-in;
-  border-radius: 20px;
+  border-radius: 1.25em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width:300px;
-  height:400px;
+  width:18.75em;
+  height:25em;
   background-color: #D9D9D9;
   border-radius: 5%;
   position:relative;
 }
 .img-container{
-  width:250px;
-  height:330px;
+  width:15.625em;
+  height:20.625em;
   background-color: #D9D9D9;
   border-radius: 5%;
   position:absolute;
-  top:30px;
-  left:25px
+  top:1.875em;
+  left:1.5625em;
 }
 .pets{
   height:100%; 
@@ -211,8 +211,8 @@ cursor:pointer;
   border-radius: 5%;
 }
 .pets-section .main-button{
-  width: 300px; 
-  margin: 100px auto; 
+  width:18.75em; 
+  margin: 6.25em auto; 
   display: block; 
   text-align: center;
 }
@@ -225,7 +225,7 @@ cursor:pointer;
   align-items: end;
   justify-content: center;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: 1.25em;
   text-align:center;
 }
 
@@ -235,30 +235,30 @@ cursor:pointer;
   align-items: center;
   justify-content: center;
   position:absolute;
-  border-radius: 20px;
+  border-radius: 1.25em;
   backface-visibility: hidden;
   transform:rotateY(180deg);
 }
 .card-text{
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight:800;
   color:#985D3A;
   position: relative;
-  left:120px;
-  bottom: 10px;
+  left:7.5em;
+  bottom: 0.625em;
 }
 .card-text-back{
-  font-size: 17px;
+  font-size: 1.0625em;
   font-weight:500;
   backface-visibility: hidden;
   color:#834E2E;
-  margin:20px 20px;
+  margin:1.25em 1.25em;
 }
 span{
   font-style: italic;
   font-weight: bold;
 }
-@media (max-width: 768px) { 
+@media (max-width: 37.5em) { 
   .nav-menu-container { 
       width: 100%; 
       justify-content: flex-end; 
@@ -270,7 +270,7 @@ span{
     width: 100%; 
     background-color: #834E2E; 
     position: absolute; 
-    top: 60px; 
+    top: 3.75em; 
     left: 0; 
     right: 0; 
     z-index: 1000; 
@@ -280,10 +280,10 @@ span{
   .nav-item { 
     width: 100%; 
     text-align: center; 
-    padding: 10px 0; 
+    padding: 0.625em 0; 
   } 
   .nav-links { 
-    padding: 10px; 
+    padding: 0.625em; 
   } 
   .menu-toggle { 
     display: flex; 

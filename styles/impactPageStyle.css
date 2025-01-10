@@ -1,6 +1,6 @@
 section{
-  margin-top: 120px;
-  margin-bottom: 100px;
+  margin-top: 7.5em;
+  margin-bottom: 6.25em;
   width: 100%;
 }
 .achievements-container{
@@ -10,38 +10,35 @@ section{
   justify-content: space-between;
   width:90%;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 6.25em;
 }
 .achievements{
   display: flex;
   align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 15.625em;
+  height: 15.625em;
   background-color: #D9D9D9;
-  border-radius: 125px;
-  margin-bottom: 30px;
+  border-radius: 7.8125em;
+  margin-bottom: 1.785em;
 }
 .text{
   width: 100%;
   color:#653b23;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .impact-container ul{
-  margin-left: 60px;
+  margin-left: 3.75em;
   color:#D9D9D9;
   line-height: 2;
   list-style: none;
 }
 .impact-container ul li{
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .impact-container ul li::before {
-  margin-right: 5px;
+  margin-right:0.3125em;
   content: '➲';
   color: rgb(240, 204, 114);
-  font-size: 25px;
+  font-size: 1.5625em;
 }
-@media (max-width: 768px) { 
-  
-  }
