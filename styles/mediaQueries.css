@@ -1,4 +1,4 @@
-@media screen and (max-width: 37.5em) { 
+@media only screen and (max-width: 768px) { 
   .nav-menu-container { 
       width: 100%; 
       justify-content: flex-end; 
@@ -9,7 +9,7 @@
     width: 100%; 
     background-color: #834E2E; 
     position: absolute; 
-    top: 3.75em; 
+    top: 60px; 
     left: 0; 
     right: 0; 
     z-index: 1000; 
@@ -19,29 +19,46 @@
   .nav-item { 
     width: 100%; 
     text-align: center; 
-    padding: 0.625em 0; 
+    padding: 10px 0; 
   } 
   .nav-links { 
-    padding: 0.625em; 
+    padding: 10px; 
   } 
   .menu-toggle { 
     display: flex; 
   } 
-  .right-section .text-heading{
-    display:none;
+  .right-section {
+    margin:150px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+  }
+  .right-section h1{
+    display:block;
+    width:100px;
+    font-size:30px;
+  }
+  .right-section h3{
+    display:block;
+    width:100px;
+    font-size:20px;
   }
   .adopt-me{
-    margin-top: 28.125em;
-    margin-right: 5em;
+    position: absolute;
+    top:320px;
+    right:150px;
+   
   }
     .pets-section {
-      padding: 0.625em;
+      padding: 10px;
     }
     .main-heading {
-      font-size: 2.5em;
+      font-size: 40px;
     }
     .main-text {
-      font-size: 1.5625em;
+      font-size: 25px;
     }
     .cards-container {
       display: flex;
@@ -50,7 +67,7 @@
     }
     .cards {
       width: 100%;
-      margin-bottom: 1.25em;
+      margin-bottom: 20px;
     }
     .img-container {
       display: flex;
@@ -58,10 +75,10 @@
     }
     .pets {
       width: 100%;
-      max-width: 18.75em;
+      max-width: 300px;
     }
     .card-text, .card-text-back {
-      font-size: 1em;
+      font-size: 16px;
     }
     .main-button {
       width: 50%; 
@@ -74,48 +91,162 @@
     margin:auto;
   }
   .footer-heading, .material-symbols-outlined{
-    font-size:1.5625em;
+    font-size:25px;
   }
    .main-heading{
-    font-size: 1.5625em;
+    font-size: 25px;
   }
    .main-text{
-    font-size: 0.9375em;
+    font-size: 15px;
   }
   .right-column .main-heading{
-    font-size: 1.25em;
+    font-size: 20px;
   }
   .right-column .bullets{
-    font-size: 1.25em;
+    font-size: 20px;
   } 
   .bullets ul li{
-    font-size: 0.9375em;
+    font-size: 15px;
   }
   .achievements { 
     display: flex;
     align-items: center;
-    width: 7.5em;
-    height: 7.5em;
+    width: 120px;
+    height: 120px;
     background-color: #D9D9D9;
-    border-radius: 3.75em;
-    margin-bottom: 1.875em;
+    border-radius: 60px;
+    margin-bottom: 30px;
     } 
     .text{
       width: 100%;
       color:#653b23;
       text-align: center;
-      font-size: 0.625em;
+      font-size: 10px;
     }
-    .form-container { 
-      max-width: 31.25em; 
-      margin: 0 auto; 
-    } 
-    input, select, button { 
-      width: calc(50% - 0.625em); 
-      float: left; 
-      margin-right: 0.625em; 
-    } 
-    input:nth-child(even), select:nth-child(even), button:nth-child(even) { 
-      margin-right: 0; 
-    } 
   }
+  @media only screen and (max-width: 600px) { 
+    .nav-menu-container { 
+        width: 100%; 
+        justify-content: flex-end; 
+      } 
+    .nav-menu { 
+      display: none; 
+      flex-direction: column; 
+      width: 100%; 
+      background-color: #834E2E; 
+      position: absolute; 
+      top: 60px; 
+      left: 0; 
+      right: 0; 
+      z-index: 1000; 
+    }.nav-menu.active { 
+      display: flex; 
+    } 
+    .nav-item { 
+      width: 100%; 
+      text-align: center; 
+      padding: 10px 0; 
+    } 
+    .nav-links { 
+      padding: 10px; 
+    } 
+    .menu-toggle { 
+      display: flex; 
+    } 
+    .right-section {
+      margin:150px 0 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: space-between;
+      position: relative;
+    }
+    .right-section h1{
+      display:block;
+      width:100px;
+      font-size:30px;
+    }
+    .right-section h3{
+      display:block;
+      width:100px;
+      font-size:20px;
+    }
+    .adopt-me{
+      position: absolute;
+      top:320px;
+      right:150px;
+     
+    }
+      .pets-section {
+        padding: 10px;
+      }
+      .main-heading {
+        font-size: 40px;
+      }
+      .main-text {
+        font-size: 25px;
+      }
+      .cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .cards {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .img-container {
+        display: flex;
+        justify-content: center;
+      }
+      .pets {
+        width: 100%;
+        max-width: 300px;
+      }
+      .card-text, .card-text-back {
+        font-size: 16px;
+      }
+      .main-button {
+        width: 50%; 
+        margin-left: 0;
+      }
+    .left-part{
+      display:none;
+    }
+    .right-part{
+      margin:auto;
+    }
+    .footer-heading, .material-symbols-outlined{
+      font-size:25px;
+    }
+     .main-heading{
+      font-size: 25px;
+    }
+     .main-text{
+      font-size: 15px;
+    }
+    .right-column .main-heading{
+      font-size: 20px;
+    }
+    .right-column .bullets{
+      font-size: 20px;
+    } 
+    .bullets ul li{
+      font-size: 15px;
+    }
+    .achievements { 
+      display: flex;
+      align-items: center;
+      width: 120px;
+      height: 120px;
+      background-color: #D9D9D9;
+      border-radius: 60px;
+      margin-bottom: 30px;
+      } 
+      .text{
+        width: 100%;
+        color:#653b23;
+        text-align: center;
+        font-size: 10px;
+      }
+    }
